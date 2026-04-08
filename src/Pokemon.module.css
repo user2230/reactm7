@@ -1,0 +1,30 @@
+.pokemon {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: #1f2937;
+  color: white;
+  text-align: center;
+  width: 260px;
+}
+
+.name {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.image {
+  width: 140px;
+  height: 140px;
+  margin-bottom: 10px;
+}
+
+.type {
+  background-color: #374151;
+  padding: 6px 12px;
+  margin: 4px;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 14px;
+}

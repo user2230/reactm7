@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e5e7eb; 
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; 
+}
+
+.content {
+  display: flex;
+  gap: 30px; 
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.image-gallery-left-nav,
+.image-gallery-right-nav,
+.image-gallery-fullscreen-button,
+.image-gallery-play-button {
+  display: none;
+}
+
+.image-gallery {
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.image-gallery-slide img {
+  border-radius: 12px;
+}
+
+.image-gallery-thumbnails {
+  display: none;
+}
