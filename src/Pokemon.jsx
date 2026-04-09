@@ -15,7 +15,7 @@ export function Pokemon() {
   if (pokemon === null) {
     return (
       <section className={styles.pokemon}>
-        <h2>Fetching Pokemon...</h2>
+        <h2>Fetching Pokemon..</h2>
       </section>
     );
   }
@@ -38,6 +38,33 @@ export function Pokemon() {
         ))}
       </div>
 
+      <div className={styles.infoBlock}>
+        <h3>Abilities</h3>
+        <ul>
+          {pokemon.abilities.map((a) => (
+            <li key={a.ability.name}>{a.ability.name}</li>
+          ))}
+        </ul>
+      </div>
+
+      <div className={styles.infoBlock}>
+        <h3>Stats</h3>
+        <ul>
+          {pokemon.stats.map((s) => (
+            <li key={s.stat.name}>
+              {s.stat.name}: {s.base_stat}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className={styles.infoBlock}>
+        <h3>Moves</h3>
+        <ul>
+          {pokemon.moves.slice(0, 5).map((m) => (
+           <li key={m.move.name}>{m.move.name}</li>
+          ))}
+        </ul>
+     </div>
     </section>
   );
 }

@@ -22,8 +22,12 @@ function Games() {
   return (
     <main>
       <h1>Games</h1>
-      <CookieClicker />
-      <Pokemon />
+
+      <div className="content">
+        <CookieClicker />
+        <Pokemon />
+      </div>
+
       <Gallery />
     </main>
   )
@@ -52,4 +56,4 @@ function App() {
   )
 }
 
-export default App;
+export default App

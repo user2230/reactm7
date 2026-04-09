@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #e5e7eb; 
+  font-family: 'Inter', sans-serif; 
+  background-color: #e5e7eb;
 }
 
 .app {
@@ -14,11 +14,11 @@ body {
 }
 
 .content {
-  display: flex;
-  gap: 30px; 
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  justify-items: center;
+} 
 
 .image-gallery-left-nav,
 .image-gallery-right-nav,

@@ -6,10 +6,26 @@
 
 .list {
   display: flex;
-  gap: 24px;
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 100%;
+}
+
+.listItem {
+  flex: 1;
+}
+
+.listItem:nth-child(1) {
+  text-align: left;
+}
+
+.listItem:nth-child(2) {
+  text-align: center;
+}
+
+.listItem:nth-child(3) {
+  text-align: right;
 }
 
 .listItem a {

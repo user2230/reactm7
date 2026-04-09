@@ -6,14 +6,16 @@ export function CookieClicker() {
   const [score, setScore] = useState(0);
   const [grandmas, setGrandmas] = useState(0);
 
+  const grandmaPrice = Math.floor(20 * Math.pow(1.15, grandmas));
+
   function scoreUp() {
     setScore(score + 1 + grandmas);
   }
 
   function buyGrandma() {
-    if (score >= 20) {
+    if (score >= grandmaPrice) {
       setGrandmas(grandmas + 1);
-      setScore(score - 20);
+      setScore(score - grandmaPrice);
     }
   }
 
@@ -29,7 +31,9 @@ export function CookieClicker() {
 
       <div>
         <p>Grandmas: {grandmas}</p>
-        <button onClick={buyGrandma}>Buy grandma (20)</button>
+        <button className={styles.buyButton} onClick={buyGrandma}>
+          Buy grandma ({grandmaPrice})
+        </button>
       </div>
     </section>
   );
