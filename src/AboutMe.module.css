@@ -11,6 +11,8 @@
 .AboutMe img {
   width: 160px;
   border-radius: 12px;
+  user-select: none;
+  pointer-events: none;
 }
 
 .text {

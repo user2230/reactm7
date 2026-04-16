@@ -24,6 +24,8 @@
   height: 150px;
   margin-bottom: 12px;
   filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.5));
+  user-select: none;
+  pointer-events: none;
 }
 
 .type {

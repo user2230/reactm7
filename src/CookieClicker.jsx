@@ -31,7 +31,12 @@ export function CookieClicker() {
 
       <div>
         <p>Grandmas: {grandmas}</p>
-        <button className={styles.buyButton} onClick={buyGrandma}>
+
+        <button
+          className={styles.buyButton}
+          onClick={buyGrandma}
+          disabled={score < grandmaPrice}
+        >
           Buy grandma ({grandmaPrice})
         </button>
       </div>
